@@ -2,10 +2,13 @@
 (Sim)ulate (Ba)zar Loader
 
 ## Introduction
-Sim-Ba is an in-memory PE Loader designed to simulate the behaviour of Bazar Loader. It downloads the payload from C2 URL and uses Process Hollowing method to inject downloaded PE into the new process created in suspended state. Process Hollowing is already a well-known and commonly used injection [technique](https://attack.mitre.org/techniques/T1055/012/) by malware developers. Sim-Ba is a modified version of another Process Hollowing repository: [idan1288/ProcessHollowing32-64](https://github.com/idan1288/ProcessHollowing32-64) 
+Sim-Ba is an in-memory PE Loader designed to simulate the behaviour of [Bazar Loader](https://www.vkremez.com/2020/04/lets-learn-trickbot-bazarbackdoor.html). It downloads the payload from C2 URL (http or https) and uses Process Hollowing method to inject downloaded PE into the new process created in suspended state. Process Hollowing is already a well-known and commonly used injection [technique](https://attack.mitre.org/techniques/T1055/012/) by malware developers. Sim-Ba is a modified version of another Process Hollowing repository: [idan1288/ProcessHollowing32-64](https://github.com/idan1288/ProcessHollowing32-64) 
 
 ## Defender Bypass
-Sim-Ba can be used as the loader for your favourite RAT. I tested with Meterpreter on updated Win10 (15.11.2020). 
+Sim-Ba can be used as the loader for your favourite RAT. I tested with Meterpreter on updated Win10 (15.11.2020).
+
+![cmd](pics/cmd.png)
+![meterpreter](pics/meterpreter.png)
 
 ## Usage
 ```shell
